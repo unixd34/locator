@@ -151,7 +151,7 @@ aside #contDiv1 div:hover {
 /* footer */
 footer{
 	bottom: 0;
-	position: fixed;
+	position: ;
 	background: rgba(128, 128, 128, 0.5);
 	width: 100%;
 	display: flex;
