@@ -1,0 +1,222 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	font-style: times new roman;
+}
+
+body {
+	background: url('../background.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+/* header */
+header {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
+	background: rgba(128, 128, 128, 0.5);
+	padding: 0.5em;
+}
+header div {
+	background: ;
+	display: flex;
+
+	padding: 0.5em;
+}
+header div h2{
+	color: white;
+	user-select: none;
+}
+
+
+
+
+/* aside */
+aside {
+	height: 100vh;
+	background: ;
+	right: 0;
+	display: flex;
+	grid-template-columns: auto auto;
+	grid-auto-rows: auto;
+	grid-gap: 0em;
+
+	user-select: none;
+}
+aside #contDiv1 div{
+	background: ;
+
+
+	padding: 1em;
+	cursor: pointer;
+
+
+}
+aside div h4{
+}
+aside #contDiv1 div:hover {
+	background: rgba(128, 128, 128, 0.5);
+	width: ;
+	transition: 0.2s;
+}
+#contDiv1 {
+	width: 25%;
+	height: 75%;
+    background: ;
+}
+.hide {
+	padding: ;
+
+	height: 75%;
+	width: 75%;
+    background: ;
+    display: inline-block;
+	justify-content: center;
+	align-content: center;
+}
+.hide .searchInput{
+
+}
+.galleryShow {
+	padding: ;
+
+	height: 75%;
+	width: 75%;
+    background: ;
+    display: none;
+}
+.showmap {
+    display: none;
+}
+.galleryhide {
+	width: 100%;
+    display: flex;
+
+    background: ;
+    padding: 0em;
+}
+.galleryhide .HomeJ{
+	width: 100%;
+
+	padding: 0em;
+
+	display: inline-block;
+	color: black;
+
+    overflow: scroll;
+
+    padding: 0.5em;
+}
+.galleryhide .HomeJ div{
+	background: ;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
+	margin: 0.5em;
+}
+.galleryhide .HomeJ div img{
+	width: auto;
+	box-shadow: 0.3em 0.3em 1em black;
+}
+#contDiv2 div input{
+	border-radius: 0.2em;
+	border: 0;
+	padding: 0.5em 1em;
+	width: 50%;
+	height: 1.7em;
+	outline: none;
+	position: absolute;
+	z-index: 2;
+	margin: 1em 10em;
+}
+#contDiv2 #map {
+    width: 100%;
+    height: 80%;
+    background: red;
+}
+
+
+.about {
+	display: none;
+}
+.abouthide{
+	display: flex;
+}
+
+
+/* footer */
+footer{
+	bottom: 0;
+	position: fixed;
+	background: rgba(128, 128, 128, 0.5);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+footer h4 {
+	margin: 1em;
+	font-size: 1.2em;
+	color: black;
+}
+
+
+
+
+/* Media for small screens */
+@media screen and (max-width: 900px) {
+
+  	#contDiv2 div input{
+		border-radius: 0.2em;
+		border: 0;
+		padding: 0.5em 1em;
+		width: 40%;
+		height: 1.7em;
+		outline: none;
+		position: absolute;
+		z-index: 2;
+		margin: 1em 6.5em;
+	}
+
+	.galleryhide .HomeJ{
+		width: 100%;
+
+		padding: 0.5em;
+		background: ;
+	    display: inline-block;
+	    justify-content: center;
+		align-content: center;
+
+		overflow: scroll;
+	}
+	.galleryhide .HomeJ div{
+		background: ;
+		padding: 1em;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.galleryhide .HomeJ div img{
+		width: 50%;
+		height: 100px;
+		margin: 0.4em;
+		box-shadow: 0.3em 0.3em 1em black;
+	}
+
+	header div h2{
+		color: white;
+		user-select: none;
+
+		font-size: 1em;
+	}
+
+	.galleryhide .HomeJ h3{
+		font-size: 1em;
+	}
+}
+

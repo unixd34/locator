@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+
+	<!-- GOOGLE MAP JS -->
+	<script type="text/javascript" src="js/mapAPI.js"></script>
+	<script type="text/javascript" src="js/showmap.js"></script>
+	<title>Fast-Food Locator</title>
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div id="Title">
+			<h2>Fast-Food Locator</h1>
+		</div>
+		<div>
+			<h2>Search Fast-Food in Ormoc City</h1>
+		</div>
+	</header>
+
+	<!-- NAV -->
+	<aside>
+		<div id="contDiv1">
+			<div id="div2" onclick="map(this)">
+				<h4>Home</h4>
+			</div>
+			<div id="div3" onclick="gallery(this)">
+				<h4>Gallery</h4>
+			</div>
+			<div id="div4" onclick="about(this)">
+				<h4>About Us</h4>
+			</div>
+		</div>
+
+		<div id="contDiv2" class="hide">
+			<div class="searchInput">
+				<input type="text" name="" id="search" placeholder='Enter Fast Food, Should start with "Ormoc"' value="Ormoc city fast food">
+			</div>
+			<div id="map"></div>
+			<div>
+				<h1>NOTE:</h1>
+			<p>
+				This project just started, so bare with us and help us create a better version of this system by Emailing us in about us tab.
+			</p>
+			</div>
+		</div>
+
+		<div class="galleryShow" id="galleryShow">
+			<div class="HomeJ">
+
+				<h3>All Jollibee branches here in Ormoc City</h3>
+				<p>
+					Philippines-based chain known for its burgers, fried chicken, spaghetti & Filipino dishes.
+					<br>
+					Jollibee is the largest fast food chain brand in the Philippines, operating a network of more than 1,500 stores in 17 countries. A dominant market leader in the Philippines, Jollibee enjoys the lion's share of the local market that is more than all the other multinational fast food brands in PH combined.
+					<br>
+					<br>
+					Drive tru: Address: Lilia Ave, Ormoc, Leyte
+					<br>
+					Anecita Bldg., aviles, cor Rizal St, Ormoc, Leyte
+				</p>
+				<div class="galleryPic">
+					<img src="img/jollibee/main.jpg" height="200">
+					<img src="img/jollibee/cogon.jpg" height="200">
+					<img src="img/jollibee/robinsons.jpg" height="200">
+				</div>
+
+				<h3>Greenwich place in Robinson Ormoc City</h3>
+				<p>
+					Experience an overloaded seafood discovery with the NEW Cajun Shrimp Overload® Pizza.🌊😲 A cheesy savory, shrimp-sarap pizza that’s SHRIMPly irresistible!🦐🍕
+				</p>
+				<div class="galleryPic">
+					<img src="img/Greenwich/robinsons.jpg" height="200">
+				</div>
+
+				<h3>Chowking place in Robinson Ormoc City</h3>
+				<p>
+					Chowking is a quick-service Chinese restaurant with Filipino inspired flavors. Originally from the Philippines, Chowking combines traditional Chinese cuisine with modern fast-food service.
+					<br>
+					Address: Ormoc Centrum Building, Level 1, Aviles St, Poblacion, Ormoc, 6541 Leyte
+				</p>
+				<div class="galleryPic">
+					<img src="img/Chowking/robinson.jpg" height="200">
+				</div>
+
+				<h3>Milagrina in Ormoc City</h3>
+				<p>
+					Rating. 4.1(178 Reviews)<br>
+					•Dine-in •Takeout
+				</p>
+				<div class="galleryPic">
+					<img src="img/Jo's Milagrina/main.png" height="200">
+				</div>
+
+				<h3>Loranzo's cafe` in Ormoc City</h3>
+				<p>
+					Lorenzo's Cafe` is a cafe` that has a very elegant and modern look. The ambiance gives comfort and will definitely give the customers a satisfying feeling.
+				</p>
+				<div class="galleryPic">
+					<img src="img/Lorenzo's Grills/main.jpg" height="200">
+				</div>
+
+				<h3>Martinelli Pizza Deli</h3>
+				<p>
+					Ang praktikal nga regalo, kanang maka-smile ka sa ka-lami nga pagkaon!
+					We are now accepting reservations for the Christmas Season!
+					Martinelli Pizza Deli...
+					lami tanan!
+				</p>
+				<div class="galleryPic">
+					<img src="img/Martinelli Pizza Deli/main.JPG" height="200">
+				</div>
+
+				<h3>Mcdo place every where in Ormoc, Use the map in home page to locate where it is!</h3>
+				<div class="galleryPic">
+					<img src="img/mcdo/cogon.jpg" height="200">
+					<img src="img/mcdo/mainjpg.jpg" height="200">
+				</div>
+
+				<h3>Sutuwaki</h3>
+				<p>
+					Rating. 4.1(245 Reviews)
+					<br>
+					•Dine-in •Takeout •Outdoor seating
+				</p>
+				<div class="galleryPic">
+					<img src="img/Sutuwaki/main.png" height="">
+				</div>
+			</div>
+		</div>
+
+		<div class="about" id="about">
+			<div class="aboutcontent">
+				<h4>Version 1.0</h4>
+
+				<h3>About Us</h3>
+				<p>
+					This method is to assist people identify any locations here in Ormoc, not just Ormoc; you can also search any places you want. However, we highlighted the fast food outlets to locate where it's place in order to limit the consumption of internet due to low internet signal. We also made this as simple as possible.
+				</p>
+				<br><br><br>
+				<h2>You can contact us for any suggestions or feedbacks to make this project better</h2>
+				<p>
+					Gmail: Philipgerlad34@gmail.com
+				</p>
+				<br>
+				<p>
+					Creators:
+					<br>
+					Philip Gerald Lucañas
+					<br>
+					Kenneth Lubiano
+					<br>
+					Joshua Dator
+				</p>
+			</div>
+		</div>
+
+
+
+	</aside>
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<h4>
+			Copyright Google Map (2022), Google Map API for educational purposes.
+			<p style="color: black; font-size: 0.5em;">All Rights Reserved (2022 - 2023) version 1.0</p>
+		</h4>
+	</footer>
+
+	<!-- GOOGLE MAP API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjESLUI8OAHJAl6TRgeD5Dl7YmWbcOxYU&libraries=geometry&libraries=places&callback=initMap"></script>
+</body>
+</html>
