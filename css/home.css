@@ -418,5 +418,10 @@ footer h4 {
 		margin: 0em;
 		box-shadow: 0.3em 0.3em 1em black;
 	}
+	header div h2{
+		color: white;
+		user-select: none;
+		font-size: 0.7em;
+	}
 }
 
