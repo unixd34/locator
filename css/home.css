@@ -246,6 +246,7 @@ footer h4 {
 	#contDiv2{
 		width: 100%;
 		margin: 0;
+		z-index: ;
 	}
 
   	aside #contDiv1 div{
@@ -323,7 +324,9 @@ footer h4 {
 	#contDiv2 {
 		width: 100%;
 		margin: 0;
+		z-index: ;
 	}
+	
 
   	aside #contDiv1 div{
 		background: ;
@@ -403,6 +406,7 @@ footer h4 {
 		background: ;
 		margin: 0;
 		padding: 0;
+		z-index: ;
 	}
 	#contDiv2 div{
 		width: 100%;
