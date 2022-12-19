@@ -137,7 +137,7 @@ aside #contDiv1 div:hover {
 #contDiv2 {
 	z-index: -1;
 	width: 100%;
-	margin: 2em;
+	margin: 0em;
 	background: ;
 }
 #contDiv2 #map {
@@ -180,6 +180,10 @@ footer h4 {
 
   	.about {
 		width: 100%;
+	}
+	#contDiv2 {
+		width: 100%;
+		margin: 0;
 	}
 
   	#contDiv2 div input{
@@ -239,6 +243,87 @@ footer h4 {
 	.about {
 		width: 100%;
 	}
+	#contDiv2{
+		width: 100%;
+		margin: 0;
+	}
+
+  	aside #contDiv1 div{
+		background: ;
+
+
+		padding: 1em;
+		cursor: pointer;
+
+		font-size: 0.8em;
+
+
+	}
+
+  	#contDiv2 div input{
+		border-radius: 0.2em;
+		border: 0;
+		padding: 0.5em 1em;
+		width: auto;
+		height: 1.7em;
+		outline: none;
+		position: absolute;
+		z-index: 2;
+		margin: 1em 7.3em;
+	}
+
+	.galleryhide .HomeJ{
+		width: 80;
+
+		padding: 0.5em;
+		background: ;
+	    display: inline-block;
+	    justify-content: center;
+		align-content: center;
+
+		overflow: scroll;
+		height: 100%;
+	}
+	.galleryhide .HomeJ div{
+		background: rgba(128, 128, 128, 0.5);
+		padding: ;
+		width: 50;
+		display: inline-block;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	.galleryhide .HomeJ div img{
+		width: auto;
+		height: 200px;
+		margin: 0em;
+		box-shadow: 0.3em 0.3em 1em black;
+	}
+
+	header div h2{
+		color: white;
+		user-select: none;
+
+		font-size: 1em;
+	}
+
+	.galleryhide .HomeJ h3{
+		font-size: 1em;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  	
+	.about {
+		width: 100%;
+	}
+	#contDiv2 {
+		width: 100%;
+		margin: 0;
+	}
 
   	aside #contDiv1 div{
 		background: ;
@@ -306,74 +391,32 @@ footer h4 {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
   	
 	.about {
 		width: 100%;
 	}
 
-  	aside #contDiv1 div{
+	#contDiv2 {
+		width: 100%;
 		background: ;
+		margin: 0;
+		padding: 0;
+	}
+	#contDiv2 div{
+		width: 100%;
+		background: ;
+	}
 
-
-		padding: 1em;
-		cursor: pointer;
-
+	aside div h4{
 		font-size: 0.8em;
-
-
 	}
-
-  	#contDiv2 div input{
-		border-radius: 0.2em;
-		border: 0;
-		padding: 0.5em 1em;
-		width: 30%;
-		height: 1.7em;
-		outline: none;
-		position: absolute;
-		z-index: 2;
-		margin: 1em 7.3em;
-	}
-
-	.galleryhide .HomeJ{
-		width: 80;
-
-		padding: 0.5em;
-		background: ;
-	    display: inline-block;
-	    justify-content: center;
-		align-content: center;
-
-		overflow: scroll;
-		height: 100%;
-	}
-	.galleryhide .HomeJ div{
-		background: rgba(128, 128, 128, 0.5);
-		padding: ;
-		width: 50;
-		display: inline-block;
-		justify-content: space-between;
-		align-content: center;
-	}
-
 	.galleryhide .HomeJ div img{
 		width: auto;
-		height: 200px;
+		height: 100px;
 		margin: 0em;
 		box-shadow: 0.3em 0.3em 1em black;
-	}
-
-	header div h2{
-		color: white;
-		user-select: none;
-
-		font-size: 1em;
-	}
-
-	.galleryhide .HomeJ h3{
-		font-size: 1em;
 	}
 }
 
