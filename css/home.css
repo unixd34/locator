@@ -246,7 +246,6 @@ footer h4 {
 	#contDiv2{
 		width: 100%;
 		margin: 0;
-		z-index: ;
 	}
 
   	aside #contDiv1 div{
@@ -324,9 +323,7 @@ footer h4 {
 	#contDiv2 {
 		width: 100%;
 		margin: 0;
-		z-index: ;
 	}
-	
 
   	aside #contDiv1 div{
 		background: ;
@@ -406,7 +403,6 @@ footer h4 {
 		background: ;
 		margin: 0;
 		padding: 0;
-		z-index: ;
 	}
 	#contDiv2 div{
 		width: 100%;
@@ -422,6 +418,7 @@ footer h4 {
 		margin: 0em;
 		box-shadow: 0.3em 0.3em 1em black;
 	}
+
 	header div h2{
 		color: white;
 		user-select: none;

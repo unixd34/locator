@@ -48,7 +48,6 @@ function initMap(){
       var markers = [];
       searchBox.addListener('places_changed', function () {
         var places = searchBox.getPlaces();
-
         if (places.length == 0)
           return;
 
@@ -60,18 +59,39 @@ function initMap(){
           if (!p.geometry)
             return;
 
-          markers.push(new google.maps.Marker({
+          var a = p.geometry.location.lat();
+          var b = p.geometry.location.lng();
+          var c = p.name;
+
+          
+
+          var lat = document.getElementById('lat');
+          var lng = document.getElementById('long');
+          var name = document.getElementById('name');
+          lat.innerHTML = a;
+          lng.innerHTML = b;
+          name.innerHTML = c;
+
+          var toLat = a.toString();
+          var toLng = b.toString();
+
+
+          mark = new google.maps.Marker({
             map: map,
             title: p.name,
-            position: p.geometry.location,
+            position: {lat: a, lng: b},
             zoom: 15,
             animation:google.maps.Animation.BOUNCE,
-          }));
-
-          var infowindow = new google.maps.InfoWindow({
-            content: google.maps.Location
           });
-          infowindow.open(map,bounds);
+          var infowindow = new google.maps.InfoWindow({
+            content: 
+            "Name: " + p.name + 
+            "<br>" + 
+            "Latitude: " + toLat + 
+            "<br>" + 
+            "Longitude: " + toLng
+          });
+          infowindow.open(map,mark);
 
           if (p.geometry.viewport)
             bounds.union(p.geometry.viewport);
