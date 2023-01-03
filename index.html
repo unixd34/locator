@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="js/showmap.js"></script>
 	<title>Fast-Food Locator</title>
 </head>
-<body>
+<body onload="initMap()">
 	<!-- HEADER -->
 	<header>
 		<div id="Title">
@@ -34,7 +34,27 @@
 
 		<div id="contDiv2" class="hide">
 			<div class="searchInput">
-				<input type="text" name="" id="search" placeholder='Enter Fast Food, Should start with "Ormoc"' value="Ormoc city fast food">
+				<input type="text" id="search" placeholder="Enter Your Location...">
+				<br>
+				<br>
+				<br>
+				<select id="distination">
+					<option value="" style="text-align: center;">--Choose Fast Food--</option>
+					<option value="Jollibee Ormoc DT">Jollibee Ormoc DT</option>
+					<option value="McDonald's Drive Thru Ormoc">McDonald's Drive Thru Ormoc</option>
+					<option value="Sutuwaki (SUgba, TUwa, Kilaw)">Sutuwaki (SUgba, TUwa, Kilaw)</option>
+					<option value="Chowking">Chowking Ormoc Centrum Building</option>
+					<option value="Milagrina's 2J65+JFC Real St Ormoc">Milagrina's 2J65+JFC Real St Ormoc</option>
+				</select>
+
+				<select id="mode">
+					<option value="" style="text-align: center;">--Choose Service--</option>
+					<option value="DRIVING">Driving</option>
+					<option value="WALKING">Walking</option>
+					<option value="BICYCLING">Bicycling</option>
+					<option value="TRANSIT">Transit</option>
+				</select>
+
 			</div>
 			<div id="map"></div>
 			<div>
@@ -181,6 +201,8 @@
 	</footer>
 
 	<!-- GOOGLE MAP API -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjESLUI8OAHJAl6TRgeD5Dl7YmWbcOxYU&libraries=geometry&libraries=places&callback=initMap"></script>
+	<script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjESLUI8OAHJAl6TRgeD5Dl7YmWbcOxYU&libraries=geometry&libraries=places&callback=initMap">
+ </script>
 </body>
 </html>

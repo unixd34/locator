@@ -3,6 +3,7 @@
 	margin: 0;
 	font-family: sans-serif;
 	font-style: times new roman;
+	
 }
 
 body {
@@ -79,7 +80,8 @@ aside #contDiv1 div:hover {
 	align-content: center;
 }
 .hide .searchInput{
-
+	position: relative;
+	padding: 0.5em;
 }
 .galleryShow {
 	padding: ;
@@ -126,22 +128,26 @@ aside #contDiv1 div:hover {
 #contDiv2 div input{
 	border-radius: 0.2em;
 	border: 0;
-	padding: 0.5em 1em;
-	width: 50%;
+	padding: 1em;
+	width: 80%;
 	height: 1.7em;
-	outline: none;
+	outline: rgba(255, 255, 255, 0.5);
 	position: absolute;
 	z-index: 2;
-	margin: 1em 10em;
+
+	color: black;
+}
+#contDiv2 div input::placeholder{
+	font-size: 1em;
+	color: black;
+	font-weight: bolder;
 }
 #contDiv2 {
 	z-index: ;
-	width: 100%;
-	margin: 0em;
-	background: ;
+	background: rgba(0, 0, 0, 0.5);
 }
 #contDiv2 #map {
-    width: 100%;
+    width: auto;
     height: 80%;
     background: red;
 }
@@ -171,6 +177,24 @@ footer h4 {
 	font-size: 1.2em;
 	color: black;
 }
+
+select{
+	padding: 1em;
+}
+option{
+	padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
